@@ -137,6 +137,10 @@ body.dark .footer__wrapper-card ul li {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  padding-left: 1rem;
+}
+.footer__wrapper-card input:hover {
+  color: white;
 }
 .footer__wrapper-card button {
   width: 131px;

@@ -1,4 +1,4 @@
-@use "../base/mixins" as mix;
+@use "../base/mixins";
 @import "../global";
 .footer{
     padding-top: 1rem;
@@ -9,12 +9,12 @@
         background-color: black;
     }
     &__wrapper{
-        @include mix.df(space-between, start, row);
+        @include df(space-between, start, row);
         text-align: start;
         flex-wrap: wrap;
         width: 100%;
         h1{
-            @include mix.df;
+            @include df;
             gap: 10px;
             color: $color-darkblue;
             body.dark &{
@@ -27,11 +27,11 @@
         }
         &-card{
             .footer__wrapper-socials{
-                @include mix.df(center,center,row);
+                @include df(center,center,row);
                 gap: 1rem;
                 width: 100%;
                 &-social{
-                    @include mix.df(center,center,row);
+                    @include df(center,center,row);
                     font-size: $fontSize-24px;
                     color: $color-green;
                     width: 40px;
@@ -44,7 +44,7 @@
                     -o-border-radius: 50%;
                 }
             }
-            @include mix.df(start, start, column);
+            @include df(start, start, column);
             width: calc(100% / 4 - 1rem);
             min-width: 250px;
             margin: 1rem 0;
@@ -54,7 +54,7 @@
             }
             ul{
                 width: 100%;
-                @include mix.df(start, start, column);
+                @include df(start, start, column);
                 gap: 5px;
                 li{
                     font-size: $fontSize-16px;
@@ -79,6 +79,10 @@
                 -moz-border-radius: 4px;
                 -ms-border-radius: 4px;
                 -o-border-radius: 4px;
+                padding-left: 1rem;
+                &:hover{
+                    color: white;
+                }
             }
             button{
                 width: 131px;
