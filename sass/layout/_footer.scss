@@ -1,0 +1,121 @@
+@use "../base/mixins" as mix;
+@import "../global";
+.footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    body.dark & {
+        background-color: black;
+    }
+    &__wrapper{
+        @include mix.df(space-between, start, row);
+        text-align: start;
+        flex-wrap: wrap;
+        width: 100%;
+        h1{
+            @include mix.df;
+            gap: 10px;
+            color: $color-darkblue;
+            body.dark &{
+                color: white;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        &-card{
+            .footer__wrapper-socials{
+                @include mix.df(center,center,row);
+                gap: 1rem;
+                width: 100%;
+                &-social{
+                    @include mix.df(center,center,row);
+                    font-size: $fontSize-24px;
+                    color: $color-green;
+                    width: 40px;
+                    height: 40px;
+                    background-color: $color-lightgreen;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+            @include mix.df(start, start, column);
+            width: calc(100% / 4 - 1rem);
+            min-width: 250px;
+            margin: 1rem 0;
+            gap: 1rem;
+            @media (max-width: 550px) {
+                width: 100%;
+            }
+            ul{
+                width: 100%;
+                @include mix.df(start, start, column);
+                gap: 5px;
+                li{
+                    font-size: $fontSize-16px;
+                    font-weight: 400;
+                    color: $color-lightblue;
+                    body.dark &{
+                        color: white;
+                    }
+                    &:first-child{
+                        font-size: $fontSize-20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            input{
+                width: 100%;
+                height: 40px;
+                border: 1px solid #BCD0E5;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+            }
+            button{
+                width: 131px;
+                height: 39px;
+                background-color: $color-green;
+                border-radius: 4px;
+                border: none;
+                font-size: 16px;
+                font-weight: 700;
+                color: white;
+                cursor: pointer;
+                &:hover{
+                    background-color: transparent;
+                    color: $color-green;
+                    border: 2px solid $color-green;
+                    transition: .1s linear;
+                    -webkit-transition: .1s linear;
+                    -moz-transition: .1s linear;
+                    -ms-transition: .1s linear;
+                    -o-transition: .1s linear;
+            }
+            }
+            p{
+                font-size: $fontSize-20px;
+                font-weight: 500;
+                color: $color-lightblue;
+                body.dark &{
+                    color: white;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-lightblue;
+        body.dark &{
+            color: white;
+        }
+    }
+}

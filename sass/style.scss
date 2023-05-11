@@ -842,6 +842,7 @@ body{
                 max-width: 510px;
                 gap: 7rem;
                 @media (max-width: 900px) {
+                    @include df(center, center, column);
                     width: 100%;
                     max-width: 100%;
                     height: auto;
