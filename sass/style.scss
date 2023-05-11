@@ -690,6 +690,10 @@ body{
                 -moz-border-radius: 4px;
                 -ms-border-radius: 4px;
                 -o-border-radius: 4px;
+                @media (max-width: 550px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
                 body.dark &{
                     color: white;
                 }
@@ -819,13 +823,14 @@ body{
             -ms-border-radius: 32px;
             -o-border-radius: 32px;
             @media (max-width: 900px) {
-                padding: 2rem;
-                @include df(center, center, column);
+                width: 100%;
+                padding: 1rem;
+                @include df(start, start, column);
                 }
             &-text{
                 width: 65%;
                 max-width: 510px;
-                height: 250px;
+                gap: 7rem;
                 @media (max-width: 900px) {
                     width: 100%;
                     max-width: 100%;
@@ -840,7 +845,7 @@ body{
                     max-width: 510px;
                     color: white;
                     @media (max-width: 900px) {
-                        font-size: $fontSize-28px;
+                        font-size: $fontSize-20px;
                     }
                 }
                 button{
@@ -871,6 +876,9 @@ body{
         }
         &-text{
             width: 100%;
+            @media (max-width: 550px) {
+                text-align: center;
+            }
             body.dark &{
                 color: white
             }
@@ -883,7 +891,10 @@ body{
             &-client{
                 @include df(start,start,column);
                 width: calc(100% / 3 - 1rem);
-                min-width: 275px;
+                min-width: 250px;
+                @media (max-width: 550px) {
+                    width: 100%;
+                }
                 padding: 1.5rem;
                 max-width: 327px;
                 gap: 1rem;
