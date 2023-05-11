@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="stylesheet"
 
@@ -34,11 +36,11 @@
 <body>
     <header>
         <nav class="container">
-            <h1 class="logo"><img src="images/logo.png" alt=""> Product</h1>
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""> Product</a></h1>
             <ul id="navMenu" class="nav__menu">
-                <li><a href="">Product</a></li>
-                <li><a href="">Customer</a></li>
-                <li><a href="">Pricing</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#customer">Customer</a></li>
+                <li><a href="#price">Pricing</a></li>
                 <li><a href="">Resources</a></li>
                 <div class="nav__menu__buttons">
                 <button>Sign In</button>
@@ -68,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section class="product">
+        <section id="product" class="product">
             <div class="container">
                 <div class="product__wrapper">
                     <h1 class="product__wrapper-text">
@@ -119,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="customer">
+        <section id="customer" class="customer">
             <div class="container">
                 <div class="customer__wrapper">
                     <div class="customer__wrapper-text">
@@ -183,7 +185,133 @@
                 </div>
             </div>
         </section>
+        <section class="contents">
+            <div class="container">
+                <div class="contents__wrapper">
+                    <div class="contents__wrapper-text">
+                        <h1>Contents Strategies</h1>
+                        <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                    </div>
+                    <div class="contents__wrapper-carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/owl1.jpeg" alt="">
+                                <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                                <h4>Increasing Prosperity With Positive Thinking</h4>
+                            </div>
+                            <div class="item">
+                                <img src="images/owl2.jpeg" alt="">
+                                <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                                <h4>Increasing Prosperity With Positive Thinking</h4>
+                            </div>
+                            <div class="item">
+                                <img src="images/owl3.jpeg" alt="">
+                                <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                                <h4>Increasing Prosperity With Positive Thinking</h4>
+                            </div>
+                            <div class="item">
+                                <img src="images/owl1.jpeg" alt="">
+                                <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                                <h4>Increasing Prosperity With Positive Thinking</h4>
+                            </div>
+                            <div class="item">
+                                <img src="images/owl2.jpeg" alt="">
+                                <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                                <h4>Increasing Prosperity With Positive Thinking</h4>
+                            </div>
+                            <div class="item">
+                                <img src="images/owl3.jpeg" alt="">
+                                <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                                <h4>Increasing Prosperity With Positive Thinking</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="price" class="price">
+            <div class="container">
+                <div class="price__wrapper">
+                    <div class="price__wrapper-text">
+                        <h1>Price Table</h1>
+                        <p>We offer competitive price</p>
+                    </div>
+                    <div class="price__wrapper-table">
+                        <div class="price__wrapper-table-card">
+                            <h1>Free</h1>
+                            <p>Brief price description</p>
+                            <div class="price__wrapper-table-card-price">
+                                <h1>0</h1>
+                                <div>
+                                    <p>$</p>
+                                    <p>Per / month</p>
+                                </div>
+                            </div>
+                            <p>Only 2 Operators</p>
+                            <p>Notifications</p>
+                            <p>Landing Pages</p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="price__wrapper-table-card">
+                            <h1>Free</h1>
+                            <p>Brief price description</p>
+                            <div class="price__wrapper-table-card-price">
+                                <h1>0</h1>
+                                <div>
+                                    <p>$</p>
+                                    <p>Per / month</p>
+                                </div>
+                            </div>
+                            <p>Only 2 Operators</p>
+                            <p>Notifications</p>
+                            <p>Landing Pages</p>
+                            <button>Order Now</button>
+                        </div>
+                        <div class="price__wrapper-table-card">
+                            <h1>Free</h1>
+                            <p>Brief price description</p>
+                            <div class="price__wrapper-table-card-price">
+                                <h1>0</h1>
+                                <div>
+                                    <p>$</p>
+                                    <p>Per / month</p>
+                                </div>
+                            </div>
+                            <p>Only 2 Operators</p>
+                            <p>Notifications</p>
+                            <p>Landing Pages</p>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
+    </script>
 </body>
-<script src="js/script.js"></script>
 </html>

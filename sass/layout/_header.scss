@@ -29,9 +29,12 @@ header{
         h1{
             @include df;
             gap: 1rem;
-            color: $color-darkblue;
             font-size: $fontSize-30px;
             font-weight: 700;
+            cursor: pointer;
+            a{
+                color: $color-darkblue;
+            }
             body.dark &{
                 color: white;
             }

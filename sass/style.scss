@@ -532,3 +532,265 @@ body{
         }
     }
 }
+.contents{
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    body.dark &{
+        background-color: black
+    }
+    &__wrapper{
+        &-text{
+            width: 100%;
+            margin: 2rem;
+            gap: .5rem;
+            @include df(start, start, column);
+            h1{
+                font-size: $fontSize-34px;
+                color: $color-lightblue;
+                body.dark &{
+                    color: white
+                }
+            }
+            p{
+                font-size: $fontSize-16px;
+                font-weight: 500;
+                color: $color-lightblue;
+                body.dark &{
+                    color: white
+                }
+            }
+        }
+        @include df(center, center, column);
+        &-carousel{
+            @include df(center, center, row);
+            width: 100%;
+            .owl-carousel{
+                width: 100%;
+                @include df(center, center, row);
+                gap: 1rem;
+                .owl-nav{
+                    display: none;
+                }
+                .owl-dots{
+                    margin-top: 2rem;
+                    .owl-dot{
+                        span{
+                            width: 16px;
+                            height: 16px;
+                            background-color: #EFEFEF;
+                        }
+                        &.active{
+                            span{
+                            background-color: $color-green !important;
+                            }
+                        }
+                    }
+                }
+                .item{
+                    @include df(start,start,column);
+                    gap: .5rem;
+                    max-width: 350px;
+                    height: 360px;
+                    border: 1px solid #9d9d9d;
+                    padding-bottom: 1rem;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                    &:hover h4{
+                        color: $color-green;
+                        transition: .1s linear;
+                        -webkit-transition: .1s linear;
+                        -moz-transition: .1s linear;
+                        -ms-transition: .1s linear;
+                        -o-transition: .1s linear;
+                    }
+                    p{
+                        margin-left: 24px;
+                        font-size: $fontSize-16px;
+                        font-weight: 400;
+                        color: $color-lightblue;
+                        body.dark &{
+                            color:white;
+                        }
+                        b{
+                            font-weight: 700;
+                        }
+                    }
+                    h4{
+                        margin-left: 24px;
+                        font-size: $fontSize-24px;
+                        font-weight: 700;
+                        color: $color-lightblue;
+                        body.dark &{
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.price{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    body.dark & {
+        background-color: black;
+    }
+    &__wrapper{
+        @include df(center, center, column);
+        gap: 2rem;
+        &-text{
+        text-align: center;
+        h1{
+            font-size: $fontSize-34px;
+            font-weight: 700;
+            color: $color-lightblue;
+        }
+        p{
+            font-size: $fontSize-16px;
+            font-weight: 500;
+            color: $color-lightblue
+        }
+        body.dark &{
+            h1{
+            color: white !important;
+            }
+            p{
+            color: white !important;
+            }
+        }
+        }        
+        &-table{
+            @include df;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 2rem;
+            &-card{
+                @include df(center,center,column);
+                width: calc(100% / 3 - 2rem);
+                min-width: 275px;
+                gap: 1rem;
+                max-width: 322px;
+                padding: 3rem;
+                cursor: pointer;
+                border-radius: 4;
+                color: $color-lightblue;
+                border-radius: 4px;
+                transition: .1s linear;
+                -webkit-transition: .1s linear;
+                -moz-transition: .1s linear;
+                -ms-transition: .1s linear;
+                -o-transition: .1s linear;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
+                body.dark &{
+                    color: white;
+                }
+                body.dark &:hover{
+                    color: black;
+                    button{
+                        background-color: white;
+                        color: black;
+                    }
+                    .price__wrapper-table-card-price{
+                        h1{
+                            color: black !important;
+                        }
+                        div{
+                            p{
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+                body.dark & {
+                    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.25);
+                }
+                &:hover{
+                    background-color: $color-green;
+                    color: white;
+                    button{
+                        background-color: white;
+                        color: $color-green;
+                    }
+                    .price__wrapper-table-card-price{
+                        h1{
+                            color: white !important;
+                        }
+                        div{
+                            p{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                h1{
+                    font-size: $fontSize-24px;
+                    font-weight: 700;
+                }
+                div{
+                    p{
+                        font-size: $fontSize-16px;
+                        font-weight: 500;
+                        body.dark &{
+                            color: white;
+                        }
+                        &:nth-child(2){
+                            font-weight: 400;
+                        }
+                    }
+                }
+                &-price{
+                    @include df;
+                    gap: 5px;
+                    h1{
+                        font-size: $fontSize-76px;
+                        font-weight: 700;
+                        color: $color-green;
+                        body.dark &{
+                            color: white;
+                        }
+                    }
+                    p{
+                        body.dark &{
+                            color: white;
+                        }
+                        &:first-child{
+                            font-size: $fontSize-24px;
+                            font-weight: 700;
+                            color: $color-green;
+                        }
+                        &:last-child{
+                            font-size: $fontSize-16px;
+                            font-weight: 400;
+                            color: $color-lightblue;
+                        }
+                    }
+                }
+                button{
+                    width: 140px;
+                    height: 44px;
+                    color: white;
+                    margin-top: 2rem;
+                    background-color: $color-green;
+                    border: none;
+                    font-size: $fontSize-18px;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+}
+            }
+        }
+    }
+}
