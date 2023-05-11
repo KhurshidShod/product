@@ -1,6 +1,6 @@
-@mixin df {
+@mixin df($jc: center, $ai: center, $fd: row) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
 }
