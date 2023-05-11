@@ -1,0 +1,160 @@
+@import "../base/mixins";
+@import "../global";
+header{
+    width: 100%;
+    height: 120px;
+    font-family: "Poppins";
+    position: fixed;
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -ms-transition: .2s linear;
+    -o-transition: .2s linear;
+    z-index: 99999;
+    &.shrink{
+        height: 80px;
+        background-color: white;
+    }
+    body.dark &.shrink{
+        background-color: black;
+    }
+    nav{
+        height: 100%;
+        @include df;
+        justify-content: space-between;
+        img{
+            width: 40px;
+            height: 36px;
+        }
+        h1{
+            @include df;
+            gap: 1rem;
+            color: $color-darkblue;
+            font-size: $fontSize-30px;
+            font-weight: 700;
+        }
+        #openNav{
+            font-size: 32px;
+            display: none;
+            color: $color-darkblue;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            i{
+                transform: rotate3d(0,1,0,180deg);
+                -webkit-transform: rotate3d(0,1,0,180deg);
+                -moz-transform: rotate3d(0,1,0,180deg);
+                -ms-transform: rotate3d(0,1,0,180deg);
+                -o-transform: rotate3d(0,1,0,180deg);
+            }
+            @media (max-width: 900px) {
+                &{
+                    display: flex;
+                }
+            }
+        }
+        .nav__menu{
+            @include df;
+            #closeNav{
+                font-size: 38px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                color: $color-darkblue;
+                display: none;
+                @media (max-width: 900px) {
+                    &{
+                        display: flex;
+                    }
+                }
+            }
+            &__buttons{
+                @include df;
+                gap: .5rem;
+                button{
+                    width: 102px;
+                    height: 43px;
+                    border-radius: 4px;
+                    font-size: $fontSize-16px;
+                    font-weight: 600;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                }
+                    button:nth-child(1){
+                    background-color: transparent;
+                    border: 1px solid $color-lightgrey;
+                    color: black;
+                    }
+                    button:nth-child(2){
+                    background-color: $color-green;
+                    border: none;
+                    color: white;
+                    transition: .1s linear;
+                    -webkit-transition: .1s linear;
+                    -moz-transition: .1s linear;
+                    -ms-transition: .1s linear;
+                    -o-transition: .1s linear;
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid $color-green;
+                        color: $color-green;
+                    }
+                    }
+                    button:nth-child(3){
+                    background-color: $color-lightergrey;
+                    border: none;
+                    width: 32px;
+                    height: 32px;
+                    font-size: 23px;
+                    color: $color-green;
+                    @include df;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    }
+            }
+            li{
+                float: left;
+                margin: .5rem;
+                a{
+                    color: $color-lightblue;
+                    font-size: $fontSize-16px;
+                    font-weight: 500;
+                    transition: .1s linear;
+                    -webkit-transition: .1s linear;
+                    -moz-transition: .1s linear;
+                    -ms-transition: .1s linear;
+                    -o-transition: .1s linear;
+                    &:hover{
+                        font-weight: 600;
+                    }
+                }
+            }
+            @media (max-width: 900px) {
+                &{
+                    position: fixed;
+                    background-color: white;
+                    width: 100%;
+                    height: 100vh;
+                    top: -100%;
+                    left: 0;
+                    gap: 1rem;
+                    flex-direction: column;
+                    z-index: 9;
+                    transition: .3s linear;
+                    -webkit-transition: .3s linear;
+                    -moz-transition: .3s linear;
+                    -ms-transition: .3s linear;
+                    -o-transition: .3s linear;
+}
+            }
+        }
+    }
+}

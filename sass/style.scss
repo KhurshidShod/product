@@ -1,0 +1,400 @@
+@forward "layout/footer";
+@forward "layout/header";
+@import "./global";
+body{
+    font-family: 'Poppins';
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    @media (max-width: 900px) {
+        padding-top: 1rem;
+    }
+    &__wrapper{
+        @include df;
+        justify-content: space-between;
+        margin-top: 120px;
+        @media (max-width: 900px) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 5rem;
+        }
+        &-content{
+            @include df;
+            flex-direction: column;
+            align-items: start;
+            width: 45%;
+            gap: 1.5rem;
+            @media (max-width: 900px) {
+                width: 100%;
+                align-items: center;
+                text-align: center;
+            }
+            h1{
+                font-size: $fontSize-40px;
+                max-width: 400px;
+                font-weight: 700;
+                line-height: 60px;
+            }
+            p{
+                max-width: 450px;
+                font-size: $fontSize-18px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+            &__buttons{
+                margin-top: 3rem;
+                button{
+                    width: 175px;
+                    height: 53px;
+                    border-radius: 4px;
+                    border: none;
+                    font-size: $fontSize-16px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                    &:first-child{
+                        background-color: $color-green;
+                        font-weight: 700;
+                        color: white;
+                    }
+                    &:last-child{
+                        background-color: transparent;
+                        border: none;
+                        gap: 10px;
+                        a{
+                        color: $color-green;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        &-photo{
+            width: 45%;
+            img{
+                width: 100%;
+            }
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+        }
+    }
+}
+.product{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-image: url("../images/Bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrapper{
+        width: 100%;
+        @include df;
+        flex-direction: column;
+        gap: 3rem;
+        button{
+            text-transform: uppercase;
+            margin-top: 3rem;
+            width: 175px;
+            height: 53px;
+            background-color: $color-green;
+            color: white;
+            border: none;
+            font-size: $fontSize-16px;
+            font-weight: 700;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            &:hover{
+                background-color: transparent;
+                color: $color-green;
+                border: 2px solid $color-green;
+                transition: .1s linear;
+                -webkit-transition: .1s linear;
+                -moz-transition: .1s linear;
+                -ms-transition: .1s linear;
+                -o-transition: .1s linear;
+}
+        }
+        &-text{
+            font-size: $fontSize-32px;
+            font-weight: 700;
+            max-width: 530px;
+            text-align: center;
+        }
+        &-products{
+            @include df;
+            width: 100%;
+            gap: 2rem;
+            align-items: start;
+            flex-wrap: wrap;
+            &-card{
+                @include df;
+                flex-direction: column;
+                align-items: start;
+                width: calc(100% / 4 - 2em);
+                gap: 1rem;
+                min-width: 250px;
+                flex-grow: 1;
+                h5{
+                    font-size: $fontSize-22px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: $fontSize-16px;
+                    font-size: 400;
+                    line-height: 26px;
+                }
+                div{
+                    @include df;
+                    font-size: $fontSize-24px;
+                    color: white;
+                    width: 50px;
+                    height: 50px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                    border-radius: 19px;
+                    -webkit-border-radius: 19px;
+                    -moz-border-radius: 19px;
+                    -ms-border-radius: 19px;
+                    -o-border-radius: 19px;
+                    background-color: red;
+                }
+                &:nth-child(1){
+                    div{
+                    background-color: #02897A;
+                    }
+                }
+                &:nth-child(2){
+                    div{
+                    background-color: #4D8DFF;
+                    }
+                }
+                &:nth-child(3){
+                    div{
+                    background-color: #740A76;
+                    }
+                }
+                &:nth-child(4) {
+                    div{
+                        background-color: #F03E3D;
+                    }
+                }
+            }
+        }
+    }
+}
+.management{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    @media (max-width: 900px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+    &__wrapper{
+        @include df;
+        width: 100%;
+        justify-content: space-between;
+        @media (max-width: 900px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        &-text{
+            @include df;
+            flex-direction: column;
+            align-items: start;
+            width: 45%;
+            gap: 1.5rem;
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+            h5{
+                font-size: $fontSize-16px;
+                font-weight: 600;
+            }
+            h1{
+                font-size: $fontSize-32px;
+                font-weight: 700;
+            }
+            p{
+                font-size: $fontSize-16px;
+                font-weight: 400;
+                line-height: 26px;
+                b{
+                    font-weight: 600;
+                }
+            }
+            p{
+                max-width: 486px;
+            }
+        }
+        &-photo{
+            width: 45%;
+            @media (max-width: 900px) {
+                width: 50%;
+                min-width: 250px;
+                @include df;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.customer{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    @media (max-width: 900px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+    &__wrapper{
+        @include df;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        @media (max-width: 900px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        &-text{
+            @include df;
+            flex-direction: column;
+            align-items: start;
+            width: 45%;
+            gap: 1.5rem;
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+            h5{
+                font-size: $fontSize-16px;
+                font-weight: 600;
+            }
+            h1{
+                font-size: $fontSize-32px;
+                font-weight: 700;
+            }
+            p{
+                font-size: $fontSize-16px;
+                font-weight: 400;
+                line-height: 26px;
+                max-width: 400px;
+                @include df;
+                gap: 2rem;
+                justify-content: start;
+                align-items: start;
+                &:nth-child(3){
+                    i{
+                        background-color: #FF9900;
+                    }
+                }
+                &:nth-child(4){
+                    i{
+                        background-color: #F03E3D;
+                    }
+                }
+                &:nth-child(5){
+                    i{
+                        background-color: #4D8DFF;
+                    }
+                }
+                i{
+                    font-size: $fontSize-24px;
+                    padding: .5rem;
+                    border-radius: 14px;
+                    color: white;
+                    -webkit-border-radius: 14px;
+                    -moz-border-radius: 14px;
+                    -ms-border-radius: 14px;
+                    -o-border-radius: 14px;
+}    
+            }
+        }
+        &-photo{
+            width: 45%;
+            @media (max-width: 900px) {
+                width: 50%;
+                min-width: 250px;
+                @include df;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.collaborative{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    @media (max-width: 900px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    }
+    &__wrapper{
+        @include df;
+        width: 100%;
+        justify-content: space-between;
+        @media (max-width: 900px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+        &-text{
+            @include df;
+            flex-direction: column;
+            align-items: start;
+            width: 45%;
+            gap: 1.5rem;
+            @media (max-width: 900px) {
+                width: 100%;
+            }
+            h5{
+                font-size: $fontSize-16px;
+                font-weight: 600;
+            }
+            h1{
+                font-size: $fontSize-32px;
+                font-weight: 700;
+            }
+            p{
+                font-size: $fontSize-16px;
+                font-weight: 400;
+                line-height: 26px;
+                b{
+                    font-weight: 600;
+                }
+            }
+            p{
+                max-width: 486px;
+            }
+        }
+        &-photo{
+            width: 45%;
+            @media (max-width: 900px) {
+                width: 50%;
+                min-width: 250px;
+                @include df;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
