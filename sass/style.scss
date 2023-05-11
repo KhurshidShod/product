@@ -11,6 +11,9 @@ body{
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 7rem;
+    body.dark &{
+        background-color: black;
+    }
     @media (max-width: 900px) {
         padding-top: 1rem;
     }
@@ -39,12 +42,18 @@ body{
                 max-width: 400px;
                 font-weight: 700;
                 line-height: 60px;
+                body.dark &{
+                    color: white;
+                }
             }
             p{
                 max-width: 450px;
                 font-size: $fontSize-18px;
                 font-weight: 400;
                 line-height: 28px;
+                body.dark &{
+                    color: white;
+                }
             }
             &__buttons{
                 margin-top: 3rem;
@@ -95,6 +104,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    body.dark &{
+        background-color: black;
+        background-image: none;
+    }
     &__wrapper{
         width: 100%;
         @include df;
@@ -131,6 +144,9 @@ body{
             font-weight: 700;
             max-width: 530px;
             text-align: center;
+            body.dark &{
+                color: white;
+            }
         }
         &-products{
             @include df;
@@ -146,14 +162,23 @@ body{
                 gap: 1rem;
                 min-width: 250px;
                 flex-grow: 1;
+                body.dark &{
+                    color: white;
+                }
                 h5{
                     font-size: $fontSize-22px;
                     font-weight: 600;
+                    body.dark &{
+                        color: white;
+                    }
                 }
                 p{
                     font-size: $fontSize-16px;
                     font-size: 400;
                     line-height: 26px;
+                    body.dark &{
+                        color: white;
+                    }
                 }
                 div{
                     @include df;
@@ -197,6 +222,9 @@ body{
     width: 100%;
     padding-top: 10rem;
     padding-bottom: 5rem;
+    body.dark &{
+        background-color: black;
+    }
     @media (max-width: 900px) {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -217,6 +245,9 @@ body{
             align-items: start;
             width: 45%;
             gap: 1.5rem;
+            body.dark &{
+                color: white;
+            }
             @media (max-width: 900px) {
                 width: 100%;
             }
@@ -257,6 +288,9 @@ body{
     width: 100%;
     padding-top: 10rem;
     padding-bottom: 5rem;
+    body.dark &{
+        background-color: black;
+    }
     @media (max-width: 900px) {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -277,6 +311,9 @@ body{
             flex-direction: column;
             align-items: start;
             width: 45%;
+            body.dark &{
+                color: white;
+            }
             gap: 1.5rem;
             @media (max-width: 900px) {
                 width: 100%;
@@ -342,6 +379,9 @@ body{
     width: 100%;
     padding-top: 10rem;
     padding-bottom: 5rem;
+    body.dark &{
+        background-color: black;
+    }
     @media (max-width: 900px) {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -361,6 +401,9 @@ body{
             flex-direction: column;
             align-items: start;
             width: 45%;
+            body.dark &{
+                color: white;
+            }
             gap: 1.5rem;
             @media (max-width: 900px) {
                 width: 100%;

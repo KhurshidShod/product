@@ -71,6 +71,9 @@ header nav h1 {
   font-size: 30px;
   font-weight: 700;
 }
+body.dark header nav h1 {
+  color: white;
+}
 header nav #openNav {
   font-size: 32px;
   display: none;
@@ -78,6 +81,9 @@ header nav #openNav {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+body.dark header nav #openNav {
+  color: white;
 }
 header nav #openNav i {
   transform: rotate3d(0, 1, 0, 180deg);
@@ -108,6 +114,9 @@ header nav .nav__menu #closeNav {
   color: #173A56;
   display: none;
 }
+body.dark header nav .nav__menu #closeNav {
+  color: white;
+}
 @media (max-width: 900px) {
   header nav .nav__menu #closeNav {
     display: flex;
@@ -135,6 +144,9 @@ header nav .nav__menu__buttons button:nth-child(1) {
   background-color: transparent;
   border: 1px solid #BCD0E5;
   color: black;
+}
+body.dark header nav .nav__menu__buttons button:nth-child(1) {
+  color: white;
 }
 header nav .nav__menu__buttons button:nth-child(2) {
   background-color: #02897A;
@@ -182,6 +194,9 @@ header nav .nav__menu li a {
   -ms-transition: 0.1s linear;
   -o-transition: 0.1s linear;
 }
+body.dark header nav .nav__menu li a {
+  color: white;
+}
 header nav .nav__menu li a:hover {
   font-weight: 600;
 }
@@ -201,6 +216,10 @@ header nav .nav__menu li a:hover {
     -moz-transition: 0.3s linear;
     -ms-transition: 0.3s linear;
     -o-transition: 0.3s linear;
+  }
+  body.dark header nav .nav__menu {
+    background-color: black;
+    color: white;
   }
 }
 
@@ -246,6 +265,9 @@ body {
   padding-top: 5rem;
   padding-bottom: 7rem;
 }
+body.dark .hero {
+  background-color: black;
+}
 @media (max-width: 900px) {
   .hero {
     padding-top: 1rem;
@@ -289,11 +311,17 @@ body {
   font-weight: 700;
   line-height: 60px;
 }
+body.dark .hero__wrapper-content h1 {
+  color: white;
+}
 .hero__wrapper-content p {
   max-width: 450px;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+}
+body.dark .hero__wrapper-content p {
+  color: white;
 }
 .hero__wrapper-content__buttons {
   margin-top: 3rem;
@@ -345,6 +373,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body.dark .product {
+  background-color: black;
+  background-image: none;
+}
 .product__wrapper {
   width: 100%;
   display: flex;
@@ -386,6 +418,9 @@ body {
   max-width: 530px;
   text-align: center;
 }
+body.dark .product__wrapper-text {
+  color: white;
+}
 .product__wrapper-products {
   display: flex;
   justify-content: center;
@@ -408,14 +443,23 @@ body {
   min-width: 250px;
   flex-grow: 1;
 }
+body.dark .product__wrapper-products-card {
+  color: white;
+}
 .product__wrapper-products-card h5 {
   font-size: 22px;
   font-weight: 600;
+}
+body.dark .product__wrapper-products-card h5 {
+  color: white;
 }
 .product__wrapper-products-card p {
   font-size: 16px;
   font-size: 400;
   line-height: 26px;
+}
+body.dark .product__wrapper-products-card p {
+  color: white;
 }
 .product__wrapper-products-card div {
   display: flex;
@@ -452,6 +496,9 @@ body {
   padding-top: 10rem;
   padding-bottom: 5rem;
 }
+body.dark .management {
+  background-color: black;
+}
 @media (max-width: 900px) {
   .management {
     padding-top: 3rem;
@@ -483,6 +530,9 @@ body {
   align-items: start;
   width: 45%;
   gap: 1.5rem;
+}
+body.dark .management__wrapper-text {
+  color: white;
 }
 @media (max-width: 900px) {
   .management__wrapper-text {
@@ -530,6 +580,9 @@ body {
   padding-top: 10rem;
   padding-bottom: 5rem;
 }
+body.dark .customer {
+  background-color: black;
+}
 @media (max-width: 900px) {
   .customer {
     padding-top: 3rem;
@@ -562,6 +615,9 @@ body {
   align-items: start;
   width: 45%;
   gap: 1.5rem;
+}
+body.dark .customer__wrapper-text {
+  color: white;
 }
 @media (max-width: 900px) {
   .customer__wrapper-text {
@@ -630,6 +686,9 @@ body {
   padding-top: 10rem;
   padding-bottom: 5rem;
 }
+body.dark .collaborative {
+  background-color: black;
+}
 @media (max-width: 900px) {
   .collaborative {
     padding-top: 3rem;
@@ -661,6 +720,9 @@ body {
   align-items: start;
   width: 45%;
   gap: 1.5rem;
+}
+body.dark .collaborative__wrapper-text {
+  color: white;
 }
 @media (max-width: 900px) {
   .collaborative__wrapper-text {
